@@ -47,15 +47,21 @@ __END__
 
 =head1 NAME
 
-Plack::Middleware::DevFavicon - It's new $module
+Plack::Middleware::DevFavicon - Shows gray favicon for development env
 
 =head1 SYNOPSIS
 
-    use Plack::Middleware::DevFavicon;
+    use Plack::Builder;
+
+    builder {
+        enable_if { $ENV{PLACK_ENV} eq 'development' } 'DevFavicon';
+        ...;
+    };
 
 =head1 DESCRIPTION
 
-Plack::Middleware::DevFavicon is ...
+Plack::Middleware::DevFavicon shows gray favicon for a specific environment
+in order to distingwish the production environment.
 
 =head1 LICENSE
 
@@ -66,7 +72,7 @@ it under the same terms as Perl itself.
 
 =head1 AUTHOR
 
-Fuji, Goro E<lt>goro-fuji@cookpad.comE<gt>
+Fuji, Goro E<lt>gfuji@cpan.orgE<gt>
 
 =cut
 

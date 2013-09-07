@@ -8,7 +8,7 @@ use Plack::Builder;
 
 
 builder {
-    enable 'DevFavicon';
+    enable_if { $ENV{PLACK_ENV} eq 'development' } 'DevFavicon';
     enable 'Static',
         path => qr{/favicon\.(?:ico|png)$},
         root => File::Spec->catfile(dirname(__FILE__), '../t/assets'),
