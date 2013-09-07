@@ -1,7 +1,7 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Shows gray favicon for development env",
    "author" : [
-      "Fuji, Goro <goro-fuji@cookpad.com>"
+      "Fuji, Goro <gfuji@cpan.org>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v0.6.5, CPAN::Meta::Converter version 2.130880",
@@ -54,5 +54,19 @@
       }
    },
    "release_status" : "unstable",
-   "version" : "0.01"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/gfx/Plack-Middleware-DevFavicon/issues"
+      },
+      "homepage" : "https://github.com/gfx/Plack-Middleware-DevFavicon",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/gfx/Plack-Middleware-DevFavicon.git",
+         "web" : "https://github.com/gfx/Plack-Middleware-DevFavicon"
+      }
+   },
+   "version" : "0.01",
+   "x_contributors" : [
+      "Fuji, Goro <goro-fuji@cookpad.com>"
+   ]
 }

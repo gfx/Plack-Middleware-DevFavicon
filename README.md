@@ -1,14 +1,20 @@
 # NAME
 
-Plack::Middleware::DevFavicon - It's new $module
+Plack::Middleware::DevFavicon - Shows gray favicon for development env
 
 # SYNOPSIS
 
-    use Plack::Middleware::DevFavicon;
+    use Plack::Builder;
+
+    builder {
+        enable_if { $ENV{PLACK_ENV} eq 'development' } 'DevFavicon';
+        ...;
+    };
 
 # DESCRIPTION
 
-Plack::Middleware::DevFavicon is ...
+Plack::Middleware::DevFavicon shows gray favicon for a specific environment
+in order to distinguish the production environment.
 
 # LICENSE
 
@@ -19,4 +25,4 @@ it under the same terms as Perl itself.
 
 # AUTHOR
 
-Fuji, Goro <goro-fuji@cookpad.com>
+Fuji, Goro <gfuji@cpan.org>
