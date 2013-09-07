@@ -45,6 +45,8 @@ __END__
 
 =encoding utf-8
 
+=for stopwords env favicon
+
 =head1 NAME
 
 Plack::Middleware::DevFavicon - Shows gray favicon for development env
@@ -61,7 +63,7 @@ Plack::Middleware::DevFavicon - Shows gray favicon for development env
 =head1 DESCRIPTION
 
 Plack::Middleware::DevFavicon shows gray favicon for a specific environment
-in order to distingwish the production environment.
+in order to distinguish the production environment.
 
 =head1 LICENSE
 
