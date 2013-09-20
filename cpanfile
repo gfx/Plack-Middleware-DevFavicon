@@ -1,4 +1,4 @@
-requires 'perl', '5.10.1';
+requires 'perl', '5.8.1';
 
 requires 'Plack';
 requires 'Imager';
